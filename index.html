@@ -5,9 +5,14 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <video autoplay loop>
+    <video id="video" autoplay loop>
+      <source src="./runleerun.mp4">
       <source src="./runleerun.mp4" type="video/mp4">
       <source src="./runleerun.mov" type="video/quicktime">
     </video>
   </body>
-</body>
+  <script>
+    var video = document.getElementById('video');
+    video.play()
+  </script>
+</html>
